@@ -14,7 +14,7 @@ class KategoriaController extends Controller
      */
     public function index()
     {
-        //
+        $entireTable = kategoria::all();
     }
 
     /**
@@ -44,9 +44,10 @@ class KategoriaController extends Controller
      * @param  \App\Models\kategoria  $kategoria
      * @return \Illuminate\Http\Response
      */
-    public function show(kategoria $kategoria)
+    public function show()
     {
-        //
+        $kategoria = kategoria::all();
+        return $kategoria;
     }
 
     /**

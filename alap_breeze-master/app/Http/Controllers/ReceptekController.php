@@ -14,7 +14,7 @@ class ReceptekController extends Controller
      */
     public function index()
     {
-        //
+       
     }
 
     /**
@@ -38,15 +38,11 @@ class ReceptekController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\receptek  $receptek
-     * @return \Illuminate\Http\Response
-     */
-    public function show(receptek $receptek)
+    
+    public function show()
     {
-        //
+        $receptek = receptek::all();
+        return $receptek;
     }
 
     /**
